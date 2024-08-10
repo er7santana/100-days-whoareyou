@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83F0BA12C682F2600CBDBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F0BA02C682F2600CBDBD7 /* ContentView.swift */; };
 		F85A2D982C67A86300673EF8 /* WhoAreYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85A2D972C67A86300673EF8 /* WhoAreYouApp.swift */; };
-		F85A2D9A2C67A86300673EF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85A2D992C67A86300673EF8 /* ContentView.swift */; };
 		F85A2D9C2C67A86400673EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85A2D9B2C67A86400673EF8 /* Assets.xcassets */; };
 		F85A2D9F2C67A86400673EF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85A2D9E2C67A86400673EF8 /* Preview Assets.xcassets */; };
 		F85A2DA92C67A90B00673EF8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85A2DA82C67A90B00673EF8 /* Person.swift */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F83F0BA02C682F2600CBDBD7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F85A2D942C67A86300673EF8 /* WhoAreYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoAreYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85A2D972C67A86300673EF8 /* WhoAreYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAreYouApp.swift; sourceTree = "<group>"; };
-		F85A2D992C67A86300673EF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F85A2D9B2C67A86400673EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F85A2D9E2C67A86400673EF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F85A2DA82C67A90B00673EF8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -68,7 +68,6 @@
 				F85A2DA62C67A8F500673EF8 /* View */,
 				F85A2DA52C67A8F300673EF8 /* ViewModel */,
 				F85A2D972C67A86300673EF8 /* WhoAreYouApp.swift */,
-				F85A2D992C67A86300673EF8 /* ContentView.swift */,
 				F85A2D9B2C67A86400673EF8 /* Assets.xcassets */,
 				F85A2D9D2C67A86400673EF8 /* Preview Content */,
 			);
@@ -95,6 +94,7 @@
 		F85A2DA62C67A8F500673EF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F83F0BA02C682F2600CBDBD7 /* ContentView.swift */,
 				F85A2DAF2C67B0C800673EF8 /* DetailView.swift */,
 				F85A2DB12C67B20400673EF8 /* AddPersonView.swift */,
 			);
@@ -189,8 +189,8 @@
 			files = (
 				F85A2DA92C67A90B00673EF8 /* Person.swift in Sources */,
 				F85A2DB02C67B0C800673EF8 /* DetailView.swift in Sources */,
+				F83F0BA12C682F2600CBDBD7 /* ContentView.swift in Sources */,
 				F85A2DAE2C67AAC500673EF8 /* FileManager+Extension.swift in Sources */,
-				F85A2D9A2C67A86300673EF8 /* ContentView.swift in Sources */,
 				F85A2D982C67A86300673EF8 /* WhoAreYouApp.swift in Sources */,
 				F85A2DAB2C67A95F00673EF8 /* PersonViewModel.swift in Sources */,
 				F85A2DB22C67B20400673EF8 /* AddPersonView.swift in Sources */,
