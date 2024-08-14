@@ -20,11 +20,18 @@ struct ContentView: View {
             List(viewModel.people.sorted()) { person in
                 NavigationLink(value: person) {
                     HStack {
-                        person.image
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .scaledToFit()
-                            .clipShape(.circle)
+                        Circle()
+                            .fill(.white)
+                            .frame(width: 43, height: 43)
+                            .overlay {
+                                person.image
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .scaledToFit()
+                                    .clipShape(.circle)
+                            }
+                            .shadow(radius: 1)
+                        
                         
                         Text(person.name)
                     }
@@ -39,15 +46,16 @@ struct ContentView: View {
                     viewModel.showingAddPerson = true
                 }
             }
-            .sheet(isPresented: $viewModel.showingAddPerson) {
+            .sheet(isPresented: $viewModel.showingAddPerson, onDismiss: loadData) {
                 NavigationStack {
-                    AddPersonView(onSavedItem: onSavedData)
+                    AddPersonView()
                 }
             }
         }
+        .onAppear(perform: loadData)
     }
     
-    func onSavedData() {
+    func loadData() {
         viewModel.loadData()
     }
 }

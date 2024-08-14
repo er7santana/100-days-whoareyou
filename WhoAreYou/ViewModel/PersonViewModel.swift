@@ -11,16 +11,12 @@ extension ContentView {
     
     @Observable
     class ViewModel {
-        var people: [Person]
+        var people: [Person] = []
         var path = [Person]()
         var showingAddPerson = false
         
         init() {
-            do {
-                people = try FileManager.read()
-            } catch {
-                people = []
-            }
+            
         }
         
         init(sampleData: [Person]) {

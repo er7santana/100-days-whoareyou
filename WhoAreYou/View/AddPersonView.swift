@@ -15,12 +15,7 @@ struct AddPersonView: View {
     @State private var pickerItem: PhotosPickerItem?
     @State private var selectedImage: Image?
     @State private var viewModel = ViewModel()
-    var onSavedItem: () -> Void
-    
-    init(onSavedItem: @escaping () -> Void) {
-        self.onSavedItem = onSavedItem
-    }
-    
+
     var body: some View {
         VStack {
             Form {
@@ -63,7 +58,6 @@ struct AddPersonView: View {
                     Button("Save") {
                         viewModel.addPerson()
                         dismiss()
-                        onSavedItem()
                     }
                     .disabled(viewModel.isSaveButtonDisabled)
                 }
@@ -85,6 +79,6 @@ struct AddPersonView: View {
 
 #Preview {
     NavigationStack {
-        AddPersonView(onSavedItem: { })
+        AddPersonView()
     }
 }
